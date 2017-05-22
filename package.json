@@ -1,0 +1,11 @@
+{
+  "name": "workflow",
+  "version": "0.0.1",
+  "description": "A general purpose workflow for web projects",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chickenn00dle/workflow.git"
+  },
+  "author": "Rasmy Nguyen",
+  "license": "ISC"
+}
