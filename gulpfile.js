@@ -30,4 +30,10 @@ gulp.task('compass', function(){
         .pipe(gulp.dest('builds/development/css'))
 });
 
-gulp.task('default', ['coffee', 'js', 'compass']);
+gulp.task('watch', function(){
+    gulp.watch('components/coffee/*.coffee', ['coffee']);
+    gulp.watch('components/scripts/*.js', ['js']);
+    gulp.watch('components/sass/style.scss', ['compass']);
+});
+
+gulp.task('default', ['coffee', 'js', 'compass', 'watch']);
