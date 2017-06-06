@@ -12,8 +12,8 @@ var env,
     sassSources,
     htmlSources,
     jsonSources,
-    sassStyle,
-    outputDir;
+    outputDir,
+    sassStyle;
 
 env = process.env.NODE_ENV || 'development';
 
@@ -60,8 +60,8 @@ gulp.task('compass', function(){
     gulp.src('components/sass/style.scss')
         .pipe(compass({
             sass: 'components/sass',
-            image: outputDir + 'img',
-            style: sassStyle
+            style: sassStyle,
+            image: outputDir + 'img'
         })
             .on('error', gutil.log))
         .pipe(gulp.dest(outputDir + 'css'))
