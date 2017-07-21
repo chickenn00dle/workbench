@@ -23,10 +23,10 @@ Ruby - https://www.ruby-lang.org/en/documentation/installation/
 $ git clone https://github.com/chickenn00dle/workflow.git [project-folder]
 ```
 
-2. cd into new project
+2. cd into new project folder
 
 ```
-& cd [project-folder]
+$ cd [project-folder]
 ```
 
 3. run npm install for dependencies
@@ -42,7 +42,7 @@ And just like that, you're ready to begin development :)
 
 Gulp - http://gulpjs.com/
 
-gul
+
 ## Author
 
-Rasmy Nguyen. Find me on Twitter: @chickenn00dle
+Rasmy Nguyen. @chickenn00dle on Twitter
