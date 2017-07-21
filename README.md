@@ -13,7 +13,7 @@ You will need to have the latest versions of node/npm, compass and ruby installe
 
 Node/Npm -  https://www.npmjs.com/get-npm
 Compass - https://www.npmjs.com/package/compass
-Ruby - https://www.ruby-lang.org/en/documentation/installation/
+Ruby - https://www.ruby-lang.org/en/documentation/installation/ (Make sure to add to $PATH)
 
 ### Installation
 
@@ -34,6 +34,16 @@ $ cd [project-folder]
 ```
 $ npm install
 ```
+
+## Testing
+
+1. Run the gulp command
+
+```
+$ gulp
+```
+
+2. Open a broswer and open localhost:8080. (You should see a red header and some Lorem ipsum text.)
 
 And just like that, you're ready to begin development :)
 
