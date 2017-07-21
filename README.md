@@ -12,7 +12,9 @@ Follow these instructions to get up and running :)
 You will need to have the latest versions of node/npm, compass and ruby installed before getting started.
 
 Node/Npm -  https://www.npmjs.com/get-npm
+
 Compass - https://www.npmjs.com/package/compass
+
 Ruby - https://www.ruby-lang.org/en/documentation/installation/ (Make sure to add to $PATH)
 
 ### Installation
@@ -55,4 +57,4 @@ Gulp - http://gulpjs.com/
 
 ## Author
 
-Rasmy Nguyen. @chickenn00dle on Twitter
+Rasmy Nguyen - @chickenn00dle on Twitter
