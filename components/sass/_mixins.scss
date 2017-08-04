@@ -1,0 +1,26 @@
+@mixin mediaQuery($args...) {
+    @if length($args) > 1 {
+        @media screen and (min-width: nth($args, 1)) and (max-width: nth($args, 2)){
+            @content;
+        }
+    } @else {
+        @media screen and (min-width: nth($args, 1)){
+            @content;
+        }
+    }
+}
+
+@mixin flexBox($wrap, $direction, $justify) {
+    display: -webkit-flex;
+     display: -ms-flexbox;
+            display: flex;
+    -webkit-flex-wrap: $wrap;
+      -ms-flex-wrap: $wrap;
+          flex-wrap: $wrap;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+                    -ms-flex-pack: justify;
+}
