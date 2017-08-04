@@ -24,3 +24,9 @@
             justify-content: space-between;
                     -ms-flex-pack: justify;
 }
+
+@mixin boxShadow($horizontal, $vertical, $blur, $spread, $color) {
+    -webkit-box-shadow: $horizontal $vertical $blur $spread $color;
+       -moz-box-shadow: $horizontal $vertical $blur $spread $color;
+            box-shadow: $horizontal $vertical $blur $spread $color;
+}
