@@ -30,3 +30,9 @@
        -moz-box-shadow: $horizontal $vertical $blur $spread $color;
             box-shadow: $horizontal $vertical $blur $spread $color;
 }
+
+@mixin borderRadius($pixels) {
+    -webkit-border-radius: $pixels;
+       -moz-border-radius: $pixels;
+            border-radius: $pixels;
+}
