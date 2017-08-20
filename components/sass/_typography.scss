@@ -1,0 +1,13 @@
+body {
+    font-size: 14px;
+}
+
+@include mediaQuery(800px){
+    body {
+        font-size: 18px;
+    }
+}
+
+p, a, ul, ol, li, dl, dt, dd, table, thead, tbody, tr, td, form {
+    font-size: 1rem;
+}
