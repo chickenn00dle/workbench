@@ -1,3 +1,20 @@
+// Color List
 $white: #fff;
 $black: #000;
-$gray: #a4a4a4;
+$gray: #414141;
+$light-gray: #dbdbdb;
+$red: #ff4444;
+$tan: #fff7f1;
+
+
+$color-background: $tan;
+$color-background-minor: $white;
+
+$color-brand: $red;
+$color-brand-minor: $white;
+
+$color-link: $red;
+$color-link-minor: lighten($red, 15%);
+
+$color-shadow: $light-gray;
+$color-shadow-minor: $gray;
