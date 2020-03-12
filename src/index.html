@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Canvas | A clean slate from which to begin your design journey</title>
+		<link rel="stylesheet" href="<%= htmlWebpackPlugin.files.chunks.main.css %>" />
+        <script src="https://use.fontawesome.com/455456b5e5.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div id="logo">
+                    <img src="http://placehold.it/100x100/ff4444/ffffff?text=Logo" alt="Brand Logo" />
+                </div>
+                <ul>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Link 4</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h1>Welcome to Canvas</h1>
+                <p>
+                    You're ready to begin development :)
+                </p>
+            </section>
+        </main>
+        <footer>
+            <section class="section">
+                <div class="segment">
+                    <p>Find me on <a href="https://twitter.com/ChickenN00dle" target="_blank">Twitter <i class="fa fa-twitter"></i></a>.</p>
+                </div>
+            </section>
+        </footer>
+        <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+    </body>
+</html>
