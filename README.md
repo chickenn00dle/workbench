@@ -31,13 +31,13 @@ npm install
 
 ## Testing
 
-1. Run the the development server
+1. Run the the development server. A browser should open to `localhost:800X`
 
 ```
 npm start 
 ```
 
-2. Open a broswer and point to localhost:8080. (You should see a very simple welcome page.)
+2. Make some changes to a `scss` or `js` file and make sure it reflect in the browser. 
 
 And just like that, you're ready to begin development :)
 
