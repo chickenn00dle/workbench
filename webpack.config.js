@@ -2,13 +2,14 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require( 'html-webpack-plugin' )
 const MiniCssExtractPlugin = require( 'mini-css-extract-plugin' )
 const OptimizeCssAssetsPlugin = require( 'optimize-css-assets-webpack-plugin' )
-const Path = require( 'path' )
 const TerserWebpackPlugin = require( 'terser-webpack-plugin' )
-const WebpackMd5Hash = require( 'webpack-md5-hash' )
+
+const path = require( 'path' )
 
 module.exports = {
 	devServer: {
-		contentBase: './dist'
+		contentBase: path.join(__dirname, 'dist'),
+		watchContentBase: true
 	},
 	entry: { main: './src/js/index.js' },
 	module: {
@@ -16,12 +17,10 @@ module.exports = {
 			{
 				test: /\.js$/,
 				exclude: /node_modules/,
-				use: {
-					loader: 'babel-loader'
-				}
+				use: [ 'babel-loader' ]
 			},
 			{
-				test: /\.scss$/,
+				test: /\.s(a|c)ss$/,
 				use: [ MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader' ]
 			}
 		]
@@ -33,12 +32,12 @@ module.exports = {
 		]
 	},
 	output: {
-		filename: '[name].[chunkhash].js',
-		path: Path.resolve( __dirname, 'dist' )
+		filename: '[name].js',
+		path: path.resolve( __dirname, 'dist' ),
 	},
 	plugins: [
 		new MiniCssExtractPlugin({
-			filename: 'style.[contenthash].css',
+			filename: 'style.css',
 		}),
 		new HtmlWebpackPlugin({
 			filename: 'index.html',
@@ -50,8 +49,7 @@ module.exports = {
 			},
 			template: './src/index.html'
 		}),
-		new WebpackMd5Hash(),
 		new CleanWebpackPlugin()
 	],
-	target: 'node',
+	target: 'web',
 }
